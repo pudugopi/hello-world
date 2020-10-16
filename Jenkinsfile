@@ -3,12 +3,12 @@ pipeline{
     stages{
       stage('source code from Github'){
         steps{
-         git 'https://github.com/pudugopi/hello-world'
+         echo 'clone source code from github'
         }
       }
       stage('Build'){
         steps{
-         sh 'clean install package'
+         echo 'Build java project'
         }
       }
       stage('Test'){
