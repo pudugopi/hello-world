@@ -8,7 +8,7 @@ pipeline{
       }
       stage('Build'){
         steps{
-         echo "Buil the project"
+         sh 'clean install package'
         }
       }
       stage('Test'){
